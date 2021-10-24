@@ -42,7 +42,7 @@ public class StaffChatVelocity {
     @Subscribe
     public void onProxyInitialization(ProxyInitializeEvent event) {
         LiteralCommandNode<CommandSource> broadcast = LiteralArgumentBuilder.<CommandSource>literal("staffchat")
-                .requires(ctx -> ctx.hasPermission("staffchat.use"))
+                .requires(ctx -> ctx.hasPermission("staffchat.velocity"))
                 .then(RequiredArgumentBuilder.<CommandSource, String>argument("message", StringArgumentType.greedyString())
                         .executes(broadcastCommand::execute)
                         .build())
