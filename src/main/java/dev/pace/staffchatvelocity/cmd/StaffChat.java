@@ -76,7 +76,7 @@ public class StaffChat {
                     )
                     .append(LegacyComponentSerializer.legacyAmpersand().deserialize("&f" + ctx.getArgument("message", String.class)))
                     .build();
-            proxyServer.getAllPlayers().stream().filter(target -> target.hasPermission("staffchat.use")).forEach(player -> player.sendMessage(deserialized));
+            proxyServer.getAllPlayers().stream().filter(target -> target.hasPermission("staffchat.velocity")).forEach(player -> player.sendMessage(deserialized));
         } else {
             Component deserialized = Component.text()
                     .append(Component.text()
