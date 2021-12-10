@@ -41,7 +41,7 @@ public class StaffChat {
                     )
                     .append(Component.text()
                             .color(NamedTextColor.YELLOW)
-                            .append(Component.text("StaffChat"))
+                            .append(Component.text("/sc"))
                             .build()
                     )
                     .append(Component.text()
